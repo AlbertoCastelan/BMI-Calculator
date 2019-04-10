@@ -8,38 +8,41 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Body Mass Calculator</h1>
     <div class="container">
-      <form>
-        <div class="weight">
-          <label>Please input your weight</label><br />
-          <input id="weight" type="text" />
+      <h1>Body Mass Calculator</h1>
+      <img src="images/bmi-image.jpg" alt="BMI Diagram" />
+      <div class="bmi-calculator">
+        <div class="bmi-form">
+          <form>
+            <div class="weight">
+              <label>Please input your weight (kg, lb)</label><br />
+              <input id="weight" type="text" />
+            </div>
+            <div class="height">
+              <label>Please input your height (m, ft)</label><br />
+              <input id="height" type="text" />
+            </div>
+            <div class="age">
+              <label>Please input your age</label><br />
+              <input id="age" type="text" />
+            </div>
+            <div class="measure">
+              <label>Select type of measure</label><br />
+              <select name="measure" id="measure">
+                <option value="Pounds">Pounds</option>
+                <option value="Kilograms">Kilograms</option>
+              </select>
+            </div>
+            <div class="gender">
+              <label>Please input your gender</label><br />
+              <label>Male</label><input id="male" type="radio" />
+              <label>Female</label><input id="female" type="radio" />
+            </div>
+            <input id="button" type="submit" />
+          </form>
         </div>
-        <div class="height">
-          <label>Please input your height</label><br />
-          <input id="height" type="text" />
-        </div>
-        <div class="age">
-          <label>Please input your age</label><br />
-          <input id="age" type="text" />
-        </div>
-        <div class="measure">
-          <label>Select type of measure</label><br />
-          <select name="measure" id="measure">
-            <option value="Pounds">Pounds</option>
-            <option value="Kilograms">Kilograms</option>
-          </select>
-        </div>
-        <div class="gender">
-          <label>Please input your gender</label><br />
-          <label>Male</label><input id="male" type="radio" />
-          <label>Female</label><input id="female" type="radio" />
-        </div>
-        <input id="button" type="submit" />
-      </form>
-    </div>
-    <div class="bmiindex">
-      <h3>Results:</h3>
+        <div class="result"></div>
+      </div>
     </div>
     <script src="js/main.js"></script>
   </body>
