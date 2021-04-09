@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Body Mass Calculator</h1>
+      <img class="container__image" src="images/bmi-image.jpg" alt="BMI Diagram" />
+      <div class="container__bmi-calculator">
+          <form>
+              <label>Please input your weight (Kilograms)</label><br />
+              <input class="container__input-weight" type="text" />
+                        
+              <label>Please input your height (Centimetres)</label><br />
+              <input class="container__input-height" type="text" />
+            
+            <input class="container__button-submit" type="submit" />
+          </form>
+       </div>
+
+      <div class="result">
+        <div class="result__closeBtn">&times;</div>
+        <p class="result__display"></p>
+      </div>
+
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
